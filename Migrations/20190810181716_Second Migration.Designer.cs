@@ -9,9 +9,10 @@ using TomatoAPI;
 namespace TomatoAPI.Migrations
 {
     [DbContext(typeof(TomatoDb))]
-    partial class TomatoDbModelSnapshot : ModelSnapshot
+    [Migration("20190810181716_Second Migration")]
+    partial class SecondMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "2.0.0-preview1-24937");
